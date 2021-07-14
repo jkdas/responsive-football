@@ -153,20 +153,26 @@ a{
         width: 90%;
         align-items: center;
     }
+    .video-highlights{
+        flex-direction: column;
+    }
 }
 /* tablet devices */
 @media only screen and (min-width: 688px) and (max-width: 992px){
-    .top.container{
+    .top.container, .video-highlights{
         width: 100%;
     }
     .players{
         grid-template-columns: repeat(2, 1fr);
         margin-right: 100px;
     }
-    .footer-container{
-        align-items: center;
+    .video-highlights{
+        flex-direction: column;
     }
-     .football-logo img{  
+    .football-logo img{  
          width: 60%;
      }
+     .footer-container{
+        align-items: center;
+    }
 }
